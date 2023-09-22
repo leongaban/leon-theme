@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "module": "dist/lib/es6/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -15,7 +15,7 @@
     "javascript",
     "theme",
     "buttons",
-    "leon"
+    "leon-theme"
   ],
   "scripts": {
     "build": "rm -rf dist/lib && tsc --build"
@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.22",
-    "jest-environment-jsdom": "^29.7.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   },
