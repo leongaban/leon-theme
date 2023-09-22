@@ -25,20 +25,20 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  padding: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"], ["\n  margin: 20px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  padding: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"])), function (props) {
-  return props.theme.btnColor;
+var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"])), function (props) {
+  return props.theme.main;
 }, function (props) {
-  return props.theme.btnPadding;
+  return props.theme.borderRadius;
 }, function (props) {
-  return props.theme.mainColor;
+  return props.theme.secondary;
 }, function (props) {
-  return props.theme.mainColor;
+  return props.theme.secondary;
 });
 // LeonButtonStyle.defaultProps = {
 //   theme: {
-//     mainColor: "#BF4F74",
-//     btnColor: "#000",
-//     btnPadding: "40px",
+//     main: "#BF4F74",
+//     secondary: "000",
+//     borderRadius: "40px",
 //   },
 // };
 var Button = function (props) {

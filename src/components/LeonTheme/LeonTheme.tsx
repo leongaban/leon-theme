@@ -8,7 +8,7 @@ interface colorsTheme {
   secondary: string;
 }
 
-interface myThemeInterface {
+export interface myThemeInterface {
   borderRadius: string;
   colors: colorsTheme;
 }
