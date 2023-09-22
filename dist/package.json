@@ -1,5 +1,5 @@
 {
-  "name": "@leon/theme",
+  "name": "leon-theme",
   "version": "0.0.1",
   "module": "lib/es6/index.js",
   "description": "A simple React style & component library",
