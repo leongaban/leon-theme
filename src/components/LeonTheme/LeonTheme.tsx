@@ -15,7 +15,7 @@ interface myThemeInterface {
 
 interface LeonThemeProps {
   component?: any;
-  myTheme: myThemeInterface;
+  theme: myThemeInterface;
 }
 
 const LeonTheme = (props: LeonThemeProps) => {

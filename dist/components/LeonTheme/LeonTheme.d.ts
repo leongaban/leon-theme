@@ -9,7 +9,7 @@ interface myThemeInterface {
 }
 interface LeonThemeProps {
     component?: any;
-    myTheme: myThemeInterface;
+    theme: myThemeInterface;
 }
 declare const LeonTheme: (props: LeonThemeProps) => React.JSX.Element;
 export default LeonTheme;
