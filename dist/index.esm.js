@@ -1,12 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+import React from 'react';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -39,18 +31,17 @@ var css_248z = ".leon-theme {\n  background-color: #282c34;\n  color: white;\n  
 styleInject(css_248z);
 
 var Button = function (props) {
-  return React__default["default"].createElement("button", {
+  return React.createElement("button", {
     className: "leon-button"
   }, props.label);
 };
 
 var LeonTheme = function (props) {
   var Component = props.component;
-  return React__default["default"].createElement("div", {
+  return React.createElement("div", {
     className: "leon-theme"
-  }, React__default["default"].createElement(Component, null));
+  }, React.createElement(Component, null));
 };
 
-exports.Button = Button;
-exports.LeonTheme = LeonTheme;
-//# sourceMappingURL=index.js.map
+export { Button, LeonTheme };
+//# sourceMappingURL=index.esm.js.map

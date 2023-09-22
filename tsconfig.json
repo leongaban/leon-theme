@@ -1,20 +1,26 @@
 {
   "compilerOptions": {
-    "module": "ES6",
-    "target": "es2016",
-    "lib": ["ES2020", "DOM"],
-    "jsx": "react",
-    "allowJs": true,
-    "declaration": true,
-    "declarationDir": "types",
+    "outDir": "./dist",
+    "module": "es6",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "sourceMap": true,
-    "allowSyntheticDefaultImports": true,
-    "noEmit": false,
+    "allowJs": false,
+    "jsx": "react",
     "moduleResolution": "node",
-    "noImplicitAny": false,
-    "rootDir": "./src",
-    "baseUrl": "./src",
-    "outDir": "./dist"
+    "rootDirs": [
+      "src"
+    ],
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "declaration": true
   },
-  "include": ["src/**/*.ts"]
+  "include": [
+    "src/**/*"
+  ]
 }
