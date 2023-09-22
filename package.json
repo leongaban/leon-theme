@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "module": "dist/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",

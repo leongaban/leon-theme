@@ -1,12 +1,15 @@
 import React from "react";
-interface ThemeStyle {
-    mainColor?: string;
-    btnColor?: string;
-    btnPadding?: string;
+interface colorsTheme {
+    main: string;
+    secondary: string;
+}
+interface myThemeInterface {
+    borderRadius: string;
+    colors: colorsTheme;
 }
 interface LeonThemeProps {
     component?: any;
-    theme: ThemeStyle;
+    myTheme: myThemeInterface;
 }
 declare const LeonTheme: (props: LeonThemeProps) => React.JSX.Element;
 export default LeonTheme;

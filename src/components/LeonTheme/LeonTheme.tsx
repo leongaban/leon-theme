@@ -1,22 +1,29 @@
 import React from "react";
+import { ThemeProvider } from "styled-components";
 
-interface ThemeStyle {
-  mainColor?: string;
-  btnColor?: string;
-  btnPadding?: string;
+import { myTheme } from "../../theme";
+
+interface colorsTheme {
+  main: string;
+  secondary: string;
+}
+
+interface myThemeInterface {
+  borderRadius: string;
+  colors: colorsTheme;
 }
 
 interface LeonThemeProps {
   component?: any;
-  theme: ThemeStyle;
+  myTheme: myThemeInterface;
 }
 
 const LeonTheme = (props: LeonThemeProps) => {
   const Component = props.component;
   return (
-    <div className="leon-theme">
+    <ThemeProvider theme={myTheme}>
       <Component />
-    </div>
+    </ThemeProvider>
   );
 };
 

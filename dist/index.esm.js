@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from 'styled-components';
+import { styled, ThemeProvider } from 'styled-components';
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -34,13 +34,13 @@ var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __ma
 }, function (props) {
   return props.theme.mainColor;
 });
-LeonButtonStyle.defaultProps = {
-  theme: {
-    mainColor: "#BF4F74",
-    btnColor: "000",
-    btnPadding: "40px"
-  }
-};
+// LeonButtonStyle.defaultProps = {
+//   theme: {
+//     mainColor: "#BF4F74",
+//     btnColor: "#000",
+//     btnPadding: "40px",
+//   },
+// };
 var Button = function (props) {
   return React.createElement(LeonButtonStyle, {
     className: "leon-button"
@@ -48,10 +48,18 @@ var Button = function (props) {
 };
 var templateObject_1;
 
+var myTheme = {
+  borderRadius: "5px",
+  colors: {
+    main: "cyan",
+    secondary: "magenta"
+  }
+};
+
 var LeonTheme = function (props) {
   var Component = props.component;
-  return React.createElement("div", {
-    className: "leon-theme"
+  return React.createElement(ThemeProvider, {
+    theme: myTheme
   }, React.createElement(Component, null));
 };
 

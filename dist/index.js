@@ -42,13 +42,13 @@ var LeonButtonStyle = styledComponents.styled.button(templateObject_1 || (templa
 }, function (props) {
   return props.theme.mainColor;
 });
-LeonButtonStyle.defaultProps = {
-  theme: {
-    mainColor: "#BF4F74",
-    btnColor: "000",
-    btnPadding: "40px"
-  }
-};
+// LeonButtonStyle.defaultProps = {
+//   theme: {
+//     mainColor: "#BF4F74",
+//     btnColor: "#000",
+//     btnPadding: "40px",
+//   },
+// };
 var Button = function (props) {
   return React__default["default"].createElement(LeonButtonStyle, {
     className: "leon-button"
@@ -56,10 +56,18 @@ var Button = function (props) {
 };
 var templateObject_1;
 
+var myTheme = {
+  borderRadius: "5px",
+  colors: {
+    main: "cyan",
+    secondary: "magenta"
+  }
+};
+
 var LeonTheme = function (props) {
   var Component = props.component;
-  return React__default["default"].createElement("div", {
-    className: "leon-theme"
+  return React__default["default"].createElement(styledComponents.ThemeProvider, {
+    theme: myTheme
   }, React__default["default"].createElement(Component, null));
 };
 
