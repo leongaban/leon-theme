@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.18",
+  "version": "0.0.20",
   "module": "dist/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -46,6 +46,7 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "styled-components": "^6.0.8"
   }
 }

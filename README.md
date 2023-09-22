@@ -25,6 +25,16 @@ root.render(
 );
 ```
 
+You can change the theme like so:
+
+```
+const theme = {
+  main: "green"
+};
+
+<LeonTheme component={App} theme={main} />
+```
+
 ## Commands to build package
 
 `npm run build` > Will generate the `dist/lib/es6` & `types` folder

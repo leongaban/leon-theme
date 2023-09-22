@@ -1,8 +1,8 @@
 import React from "react";
-import "../../theme.css";
 
 interface LeonThemeProps {
   component?: any;
+  theme?: string;
 }
 
 const LeonTheme = (props: LeonThemeProps) => {

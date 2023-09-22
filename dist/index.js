@@ -3,46 +3,52 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
+var styledComponents = require('styled-components');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
 
-  if (!css || typeof document === 'undefined') { return; }
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
 
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
 
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 }
+typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
 
-var css_248z = ".leon-theme {\n  background-color: #282c34;\n  color: white;\n  padding: 40px;\n  font-family: Arial;\n  text-align: center;\n}\n\n.leon-theme .leon-button {\n  margin: 20px;\n  padding: 40px;\n  border-radius: 15px;\n  color: white;\n  background-color: magenta;\n}\n";
-styleInject(css_248z);
-
+var LeonButtonStyle = styledComponents.styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  padding: 40px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  background-color: magenta;\n\n  color: ", ";\n  border: 2px solid ", ";\n"], ["\n  margin: 20px;\n  padding: 40px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  background-color: magenta;\n\n  color: ", ";\n  border: 2px solid ", ";\n"])), function (props) {
+  return props.theme.main;
+}, function (props) {
+  return props.theme.main;
+});
+LeonButtonStyle.defaultProps = {
+  theme: {
+    main: "#BF4F74"
+  }
+};
 var Button = function (props) {
-  return React__default["default"].createElement("button", {
+  return React__default["default"].createElement(LeonButtonStyle, {
     className: "leon-button"
   }, props.label);
 };
+var templateObject_1;
 
 var LeonTheme = function (props) {
   var Component = props.component;
