@@ -1,11 +1,8 @@
 import React from "react";
-interface colorsTheme {
-    main: string;
-    secondary: string;
-}
 export interface myThemeInterface {
     borderRadius: string;
-    colors: colorsTheme;
+    color: string;
+    backgroundColor: string;
 }
 interface LeonThemeProps {
     component?: any;

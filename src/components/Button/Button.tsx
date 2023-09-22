@@ -17,11 +17,6 @@ const LeonButtonStyle = styled.button`
   background-color: #000;
 `;
 
-// color: ${(props) => props.theme.main};
-// border-radius: ${(props) => props.theme.borderRadius};
-// border: 2px solid ${(props) => props.theme.secondary};
-// background-color: ${(props) => props.theme.secondary};
-
 const Button = (props: ButtonProps) => {
   return (
     <LeonButtonStyle className="leon-button">{props.label}</LeonButtonStyle>

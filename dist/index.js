@@ -34,10 +34,6 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
 };
 
 var LeonButtonStyle = styledComponents.styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: purple;\n  border-radius: 5px;\n  border: 2px solid #000;\n  background-color: #000;\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: purple;\n  border-radius: 5px;\n  border: 2px solid #000;\n  background-color: #000;\n"])));
-// color: ${(props) => props.theme.main};
-// border-radius: ${(props) => props.theme.borderRadius};
-// border: 2px solid ${(props) => props.theme.secondary};
-// background-color: ${(props) => props.theme.secondary};
 var Button = function (props) {
   return React__default["default"].createElement(LeonButtonStyle, {
     className: "leon-button"
@@ -47,17 +43,13 @@ var templateObject_1;
 
 var myTheme = {
   borderRadius: "5px",
-  colors: {
-    main: "cyan",
-    secondary: "magenta"
-  }
+  color: "cyan",
+  backgroundColor: "magenta"
 };
 
 var LeonTheme = function (props) {
   var Component = props.component;
   var themeStyle = props.theme ? props.theme : myTheme;
-  console.log("LeonTheme ------------");
-  console.log("props", props);
   console.log("themeStyle", themeStyle);
   return React__default["default"].createElement(styledComponents.ThemeProvider, {
     theme: themeStyle
