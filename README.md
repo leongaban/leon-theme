@@ -2,20 +2,20 @@
 
 ## A simple React style & component library
 
-#### Styles
+#### Components
 
 - Theme
 - Button
 
 ## Steps to use in React
 
-Import LeonTheme into your index.tsx
+#### Import LeonTheme into your index.tsx
 
 ```
 import { LeonTheme } from "leon-theme";
 ```
 
-Wrap your App with the component
+#### Wrap your App with the component
 
 ```
 root.render(
@@ -25,14 +25,24 @@ root.render(
 );
 ```
 
-You can change the theme like so:
+#### Set your theme, create and pass in a theme object (required):
 
 ```
 const theme = {
-  main: "green"
+  borderRadius: "30px",
+  color: "yellow",
+  backgroundColor: "purple",
 };
 
 <LeonTheme component={App} theme={main} />
+```
+
+#### Add button in any child component
+
+```
+import { Button as LeonButton } from "leon-theme";
+
+<LeonButton label="Leon Theme Works!" />
 ```
 
 ## Commands to build package
