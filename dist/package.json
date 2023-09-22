@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "module": "lib/es6/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leongaban/theme.git"
+    "url": "git+https://github.com/leongaban/leon-theme.git"
   },
   "keywords": [
     "javascript",
