@@ -33,22 +33,18 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var LeonButtonStyle = styledComponents.styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"])), function (props) {
-  return props.theme.main;
-}, function (props) {
-  return props.theme.borderRadius;
-}, function (props) {
-  return props.theme.secondary;
-}, function (props) {
-  return props.theme.secondary;
-});
-LeonButtonStyle.defaultProps = {
-  theme: {
-    main: "#BF4F74",
-    secondary: "blue",
-    borderRadius: "40px"
-  }
-};
+var LeonButtonStyle = styledComponents.styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: \"purple\";\n  border-radius: \"5px\";\n  border: 2px solid #000;\n  background-color: \"#000\";\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: \"purple\";\n  border-radius: \"5px\";\n  border: 2px solid #000;\n  background-color: \"#000\";\n"])));
+// color: ${(props) => props.theme.main};
+// border-radius: ${(props) => props.theme.borderRadius};
+// border: 2px solid ${(props) => props.theme.secondary};
+// background-color: ${(props) => props.theme.secondary};
+// LeonButtonStyle.defaultProps = {
+//   theme: {
+//     main: "#BF4F74",
+//     secondary: "blue",
+//     borderRadius: "40px",
+//   },
+// };
 var Button = function (props) {
   return React__default["default"].createElement(LeonButtonStyle, {
     className: "leon-button"
