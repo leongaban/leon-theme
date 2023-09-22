@@ -25,7 +25,13 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: purple;\n  border-radius: 5px;\n  border: 2px solid #000;\n  background-color: #000;\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: purple;\n  border-radius: 5px;\n  border: 2px solid #000;\n  background-color: #000;\n"])));
+var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  border: 2px solid #000;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n"], ["\n  margin: 20px;\n  font-size: 1.5em;\n  text-align: center;\n  border: 2px solid #000;\n  cursor: pointer;\n\n  color: ", ";\n  border-radius: ", ";\n  background-color: ", ";\n"])), function (props) {
+  return props.theme.color;
+}, function (props) {
+  return props.theme.borderRadius;
+}, function (props) {
+  return props.theme.backgroundColor;
+});
 var Button = function (props) {
   return React.createElement(LeonButtonStyle, {
     className: "leon-button"

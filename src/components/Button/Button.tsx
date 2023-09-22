@@ -9,12 +9,12 @@ const LeonButtonStyle = styled.button`
   margin: 20px;
   font-size: 1.5em;
   text-align: center;
+  border: 2px solid #000;
   cursor: pointer;
 
-  color: purple;
-  border-radius: 5px;
-  border: 2px solid #000;
-  background-color: #000;
+  color: ${(props) => props.theme.color};
+  border-radius: ${(props) => props.theme.borderRadius};
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 const Button = (props: ButtonProps) => {
