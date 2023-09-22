@@ -11,24 +11,16 @@ const LeonButtonStyle = styled.button`
   text-align: center;
   cursor: pointer;
 
-  color: "purple";
-  border-radius: "5px";
+  color: purple;
+  border-radius: 5px;
   border: 2px solid #000;
-  background-color: "#000";
+  background-color: #000;
 `;
 
 // color: ${(props) => props.theme.main};
 // border-radius: ${(props) => props.theme.borderRadius};
 // border: 2px solid ${(props) => props.theme.secondary};
 // background-color: ${(props) => props.theme.secondary};
-
-// LeonButtonStyle.defaultProps = {
-//   theme: {
-//     main: "#BF4F74",
-//     secondary: "blue",
-//     borderRadius: "40px",
-//   },
-// };
 
 const Button = (props: ButtonProps) => {
   return (
