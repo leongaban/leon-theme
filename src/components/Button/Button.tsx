@@ -17,13 +17,13 @@ const LeonButtonStyle = styled.button`
   background-color: ${(props) => props.theme.secondary};
 `;
 
-// LeonButtonStyle.defaultProps = {
-//   theme: {
-//     main: "#BF4F74",
-//     secondary: "000",
-//     borderRadius: "40px",
-//   },
-// };
+LeonButtonStyle.defaultProps = {
+  theme: {
+    main: "#BF4F74",
+    secondary: "blue",
+    borderRadius: "40px",
+  },
+};
 
 const Button = (props: ButtonProps) => {
   return (

@@ -22,6 +22,10 @@ const LeonTheme = (props: LeonThemeProps) => {
   const Component = props.component;
   const themeStyle = props.theme ? props.theme : myTheme;
 
+  console.log("LeonTheme ------------");
+  console.log("props", props);
+  console.log("themeStyle", themeStyle);
+
   return (
     <ThemeProvider theme={themeStyle}>
       <Component />

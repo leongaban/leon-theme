@@ -34,13 +34,13 @@ var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __ma
 }, function (props) {
   return props.theme.secondary;
 });
-// LeonButtonStyle.defaultProps = {
-//   theme: {
-//     main: "#BF4F74",
-//     secondary: "000",
-//     borderRadius: "40px",
-//   },
-// };
+LeonButtonStyle.defaultProps = {
+  theme: {
+    main: "#BF4F74",
+    secondary: "blue",
+    borderRadius: "40px"
+  }
+};
 var Button = function (props) {
   return React.createElement(LeonButtonStyle, {
     className: "leon-button"
@@ -59,6 +59,9 @@ var myTheme = {
 var LeonTheme = function (props) {
   var Component = props.component;
   var themeStyle = props.theme ? props.theme : myTheme;
+  console.log("LeonTheme ------------");
+  console.log("props", props);
+  console.log("themeStyle", themeStyle);
   return React.createElement(ThemeProvider, {
     theme: themeStyle
   }, React.createElement(Component, null));
