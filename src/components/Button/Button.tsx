@@ -7,19 +7,22 @@ interface ButtonProps {
 
 const LeonButtonStyle = styled.button`
   margin: 20px;
-  padding: 40px;
   border-radius: 15px;
   font-size: 1.5em;
   text-align: center;
-  background-color: magenta;
+  cursor: pointer;
 
-  color: ${(props) => props.theme.main};
-  border: 2px solid ${(props) => props.theme.main};
+  color: ${(props) => props.theme.btnColor};
+  padding: ${(props) => props.theme.btnPadding};
+  border: 2px solid ${(props) => props.theme.mainColor};
+  background-color: ${(props) => props.theme.mainColor};
 `;
 
 LeonButtonStyle.defaultProps = {
   theme: {
-    main: "#BF4F74",
+    mainColor: "#BF4F74",
+    btnColor: "000",
+    btnPadding: "40px",
   },
 };
 

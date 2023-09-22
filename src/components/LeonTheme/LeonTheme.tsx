@@ -1,8 +1,14 @@
 import React from "react";
 
+interface ThemeStyle {
+  mainColor?: string;
+  btnColor?: string;
+  btnPadding?: string;
+}
+
 interface LeonThemeProps {
   component?: any;
-  theme?: string;
+  theme: ThemeStyle;
 }
 
 const LeonTheme = (props: LeonThemeProps) => {

@@ -25,14 +25,20 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  padding: 40px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  background-color: magenta;\n\n  color: ", ";\n  border: 2px solid ", ";\n"], ["\n  margin: 20px;\n  padding: 40px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  background-color: magenta;\n\n  color: ", ";\n  border: 2px solid ", ";\n"])), function (props) {
-  return props.theme.main;
+var LeonButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin: 20px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  padding: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"], ["\n  margin: 20px;\n  border-radius: 15px;\n  font-size: 1.5em;\n  text-align: center;\n  cursor: pointer;\n\n  color: ", ";\n  padding: ", ";\n  border: 2px solid ", ";\n  background-color: ", ";\n"])), function (props) {
+  return props.theme.btnColor;
 }, function (props) {
-  return props.theme.main;
+  return props.theme.btnPadding;
+}, function (props) {
+  return props.theme.mainColor;
+}, function (props) {
+  return props.theme.mainColor;
 });
 LeonButtonStyle.defaultProps = {
   theme: {
-    main: "#BF4F74"
+    mainColor: "#BF4F74",
+    btnColor: "000",
+    btnPadding: "40px"
   }
 };
 var Button = function (props) {
