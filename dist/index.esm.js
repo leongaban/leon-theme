@@ -58,8 +58,9 @@ var myTheme = {
 
 var LeonTheme = function (props) {
   var Component = props.component;
+  var themeStyle = props.theme ? props.theme : myTheme;
   return React.createElement(ThemeProvider, {
-    theme: myTheme
+    theme: themeStyle
   }, React.createElement(Component, null));
 };
 

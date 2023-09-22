@@ -20,8 +20,10 @@ interface LeonThemeProps {
 
 const LeonTheme = (props: LeonThemeProps) => {
   const Component = props.component;
+  const themeStyle = props.theme ? props.theme : myTheme;
+
   return (
-    <ThemeProvider theme={myTheme}>
+    <ThemeProvider theme={themeStyle}>
       <Component />
     </ThemeProvider>
   );
