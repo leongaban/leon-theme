@@ -45,8 +45,8 @@ import { Button as LeonButton } from "leon-theme";
 <LeonButton label="Leon Theme Works!" />
 ```
 
-## Commands to build package
+## Commands to build package & publish package
 
-`npm run build` > Will generate the `dist/lib/es6` & `types` folder
+`npm run build` > Will generate the `dist` & `types` folder
 
 Module published with `npm publish --access public`
