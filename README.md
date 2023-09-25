@@ -47,6 +47,6 @@ import { Button as LeonButton } from "leon-theme";
 
 ## Commands to build package & publish package
 
-`npm run build` > Will generate the `dist` & `types` folder
+`npm run build` > Will generate the `dist` folder
 
 Module published with `npm publish --access public`
