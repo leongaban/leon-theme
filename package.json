@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.42",
+  "version": "0.0.43",
   "module": "dist/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -36,6 +36,7 @@
     "prettier": "^3.0.3",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "styled-components": "^6.0.8",
