@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "nodenext",
+    "module": "es6",
     "target": "es5",
     "lib": ["es6", "dom"],
     "sourceMap": true,
     "allowJs": false,
     "jsx": "react",
-    "moduleResolution": "nodenext",
     "rootDirs": ["src"],
     "baseUrl": ".",
     "esModuleInterop": true,
