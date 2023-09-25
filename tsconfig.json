@@ -3,24 +3,16 @@
     "outDir": "./dist",
     "module": "es6",
     "target": "es5",
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "lib": ["es6", "dom"],
     "sourceMap": true,
     "allowJs": false,
     "jsx": "react",
-    "moduleResolution": "node",
-    "rootDirs": [
-      "src"
-    ],
+    "rootDirs": ["src"],
     "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "declaration": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
