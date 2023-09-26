@@ -4,14 +4,14 @@ import { ThemeProvider } from 'styled-components'
 import { myTheme } from '../../theme'
 
 export interface myThemeInterface {
-  borderRadius: string
-  color: string
-  backgroundColor: string
+  color?: string
+  borderRadius?: string
+  backgroundColor?: string
 }
 
 interface LeonThemeProps {
   component?: any
-  theme: myThemeInterface
+  theme?: myThemeInterface
 }
 
 const LeonTheme = (props: LeonThemeProps) => {
