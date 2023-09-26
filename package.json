@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.57",
+  "version": "0.0.58",
   "module": "dist/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -34,6 +34,7 @@
     "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
+    "jsdoc": "^4.0.2",
     "prettier": "^3.0.3",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
