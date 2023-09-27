@@ -1,6 +1,6 @@
 {
   "name": "leon-theme",
-  "version": "0.0.58",
+  "version": "0.0.59",
   "module": "dist/index.js",
   "description": "A simple React style & component library",
   "homepage": "https://github.com/leongaban/leon-theme",
@@ -18,7 +18,8 @@
     "leon-theme"
   ],
   "scripts": {
-    "build": "rm -rf dist/lib && rollup -c"
+    "build": "rm -rf dist/lib && rollup -c",
+    "tsc": "tsc"
   },
   "author": "Leon Gaban",
   "license": "ISC",
@@ -42,7 +43,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.2",
-    "typescript": "*"
+    "typescript": "^5.2.2"
   },
   "files": [
     "dist",
