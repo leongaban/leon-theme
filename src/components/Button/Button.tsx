@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
+import { Button as MuiButton } from '@mui/material'
 
 /**
  * A Button component
@@ -26,7 +27,10 @@ const LeonButtonStyle = styled.button`
 
 const Button = (props: ButtonProps) => {
   return (
-    <LeonButtonStyle className="leon-button">{props.label}</LeonButtonStyle>
+    <div>
+      <MuiButton variant="contained">Contained</MuiButton>
+      <LeonButtonStyle className="leon-button">{props.label}</LeonButtonStyle>
+    </div>
   )
 }
 
